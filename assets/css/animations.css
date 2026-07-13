@@ -1,0 +1,182 @@
+/* ==================================
+   SARAKI ANIMATIONS
+================================== */
+
+
+/* Floating Logo */
+
+.logo img{
+
+animation:
+floatLogo 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floatLogo{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+
+
+/* Profile Glow */
+
+.profile{
+
+animation:
+profileGlow 3s infinite alternate;
+
+}
+
+
+@keyframes profileGlow{
+
+from{
+
+box-shadow:
+0 0 10px gold;
+
+}
+
+
+to{
+
+box-shadow:
+0 0 35px #00d9ff;
+
+}
+
+}
+
+
+
+/* Hero Entrance */
+
+.hero-card{
+
+animation:
+slideUp 1.5s ease;
+
+}
+
+
+
+@keyframes slideUp{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+
+
+/* Glass Hover */
+
+.card,
+.box{
+
+transition:
+0.4s;
+
+}
+
+
+
+.card:hover,
+.box:hover{
+
+transform:
+translateY(-10px)
+scale(1.03);
+
+}
+
+
+
+/* Button Animation */
+
+.btn{
+
+transition:
+0.3s;
+
+}
+
+
+
+.btn:hover{
+
+transform:
+scale(1.08);
+
+}
+
+
+
+/* Particle Animation */
+
+.particle{
+
+position:absolute;
+
+width:5px;
+
+height:5px;
+
+border-radius:50%;
+
+background:white;
+
+animation:
+moveParticle 8s linear infinite;
+
+}
+
+
+
+@keyframes moveParticle{
+
+from{
+
+transform:
+translateY(0);
+
+}
+
+
+to{
+
+transform:
+translateY(-100vh);
+
+}
+
+}
